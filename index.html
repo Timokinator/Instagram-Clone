@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzeria Da Luigi</title>
+    <link rel="icon" href="./icons/pizza.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body onload="renderMenu(); renderShoppingCart('shoppingCart'); renderSumCart()">
+    <header>
+        <a href="./index.html" class="header-left hover">
+            <img class="img-header-left" src="./icons/pizza-deliver.png" alt="">
+            <h1>Lieferando</h1>
+        </a>
+        <p class="p-header">Speisekarte</p>
+        <div class="header-right">
+            <img class="img-header-right hover" src="./icons/german.png" alt="">
+            <img class="img-header-right hover" src="./icons/menu.png" alt="">
+        </div>
+    </header>
+
+    <main>
+        <div class="content-left">
+            <div class="left-top-area">
+                <img class="img-restaurant" src="./images/pizza.jpg" alt="">
+                <!-- <img class="img-mini" src="./images/pizza-mini.png" alt=""> -->
+            </div>
+
+            <div class="name-restaurant">
+                <h2>Pizzeria Da Luigi</h2>
+                <div class="container-img-name-restaurant">
+                    <a href="#impressum"><img class="img-name-restaurant hover" src="./icons/info.png" alt=""></a>
+                    <a href="#"><img class="img-name-restaurant hover" src="./icons/heart.png" alt=""></a>
+                </div>
+            </div>
+
+            <div class="rating">
+                <img class="img-rating" src="./icons/star-full.png" alt="">
+                <img class="img-rating" src="./icons/star-full.png" alt="">
+                <img class="img-rating" src="./icons/star-full.png" alt="">
+                <img class="img-rating" src="./icons/star-full.png" alt="">
+                <img class="img-rating" src="./icons/star-half.png" alt="">
+                <a class="link-rating hover" href="#">1337 Bewertungen</a>
+            </div>
+
+            <div class="order-parameter">
+                <img class="img-order-parameter" src="./icons/clock.png" alt="">
+                <p>15 - 30 min</p>
+                <img class="img-order-parameter" src="./icons/free-delivery.png" alt="">
+                <p>kostenlose Lieferung</p>
+                <img class="img-order-parameter" src="./icons/shopping-bag.png" alt="">
+                <p>min. 25,00 €</p>
+            </div>
+
+            <div class="menu">
+                <h3>Unsere Speisen:</h3>
+
+                <div id="menuContent" class="menu-content">
+                </div>
+            </div>
+        </div>
+
+        <div id="shoppingCart" class="shopping-cart">
+
+        </div>
+    </main>
+
+    <div class="wrapper-shopping-cart-phone">
+        <div id="shoppingCartPhone" class="shopping-cart-phone d-none">
+            <button onclick="openShoppingCartPhone()" id="btnShoppingCartPhone"
+                class="btn-shopping-cart-phone hover">Warenkorb <span class="cost-shopping-cart-phone" id="costShoppingCartPhone"></span></button>
+        </div>
+    </div>
+
+    <div id="contentShoppingCartPhone" class="content-shopping-cart-phone d-none">
+        <button class="btn-close-cart hover" onclick="closeShoppingCartPhone()">Warenkorb schließen</button>
+        <div id="innerContentShoppingCartPhone" class="inner-content-shopping-cart-phone">
+
+        </div>
+    </div>
+
+    <footer>
+        <a href="https://www.flaticon.com/free-icons/german" title="german icons">German icons created by GeekClick -
+            Flaticon</a>
+        <a href="https://www.flaticon.com/free-icons/burger" title="burger icons">Burger icons created by Andy Horvath -
+            Flaticon</a>
+        <a href="https://www.flaticon.com/free-icons/info" title="info icons">Info icons created by Freepik -
+            Flaticon</a>
+        <a href="https://www.flaticon.com/free-icons/heart" title="heart icons">Heart icons created by Freepik -
+            Flaticon</a>
+        <a href="https://www.flaticon.com/free-icons/pizza-deliver" title="pizza deliver icons">Pizza deliver icons
+            created by Uniconlabs - Flaticon</a>
+        <a href="https://www.flaticon.com/free-icons/star" title="star icons">Star icons created by Maxim Basinski
+            Premium - Flaticon</a>
+        <a href="https://www.flaticon.com/free-icons/half-star" title="half star icons">Half star icons created by Pixel
+            perfect - Flaticon</a>
+        <a href="https://www.flaticon.com/free-icons/clock" title="clock icons">Clock icons created by Those Icons -
+            Flaticon</a>
+        <a href="https://www.flaticon.com/free-icons/free-delivery" title="free delivery icons">Free delivery icons
+            created by Hilmy Abiyyu A. - Flaticon</a>
+        <a href="https://www.flaticon.com/free-icons/order" title="order icons">Order icons created by Freepik -
+            Flaticon</a>
+        <a href="https://www.flaticon.com/de/kostenlose-icons/pizza" title="pizza Icons">Pizza Icons erstellt von
+            smashingstocks - Flaticon</a>
+        <a href="https://www.flaticon.com/de/kostenlose-icons/pizza" title="pizza Icons">Pizza Icons erstellt von
+            Freepik - Flaticon</a>
+        <a href="https://www.flaticon.com/de/kostenlose-icons/pizza" title="pizza Icons">Pizza Icons erstellt von
+            IconsNova - Flaticon</a>
+        <a href="https://www.flaticon.com/free-icons/add" title="add icons">Add icons created by Pixel perfect -
+            Flaticon</a>
+        <a href="https://www.flaticon.com/free-icons/minus-button" title="minus button icons">Minus button icons created
+            by Circlon Tech - Flaticon</a>
+        <a href="https://www.flaticon.com/free-icons/less" title="less icons">Less icons created by icon wind -
+            Flaticon</a>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
